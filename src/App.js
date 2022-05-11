@@ -19,7 +19,7 @@ function App() {
   const [searchValue,setSearchValue]=useState('');
 
  useEffect(()=>{
-   axios.get(`http://www.omdbapi.com/?s=${searchValue}&apikey=79928831`)
+   axios.get(`https://www.omdbapi.com/?s=${searchValue}&apikey=79928831`)
    .then((res)=>{
      if (res.data.Search){
       setMovies(res.data.Search);
